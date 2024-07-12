@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'sans-serif';
+}
+
+.limite-conteudo {
+    max-width: 1000px;
+}
+
+/* Seção 1 - TOPO */
+.secao-topo {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+}
+
+    .secao-topo .limite-conteudo {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .secao-topo .limite-conteudo .botao-home {
+            flex-grow: 1;
+            font-size: 21px;
+            text-decoration: none;
+            color: #000000;
+        }
+
+            .secao-topo .limite-conteudo .botao-home span {
+                color: #2596be;
+            }
+
+        .secao-topo .limite-conteudo .topo-links {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+            .secao-topo .limite-conteudo .topo-links a {
+                font-size: 16px;
+                text-decoration: none;
+                color: #222222;
+            }
+
+/* Seção 2 - BANNER */
+.secao-banner {
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    background-image: url('../assets/img-fundo.jpg');
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .secao-banner .banner-texto-fundo {
+        border: 1px solid #ffffff;
+        height: 150px;
+        width: 400px;
+        background-color: #49997c;
+        opacity: 70%;
+    }
+
+    .secao-banner .banner-texto-texto {
+        height: 150px;
+        width: 400px;
+        padding: 20px 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+
+        position: absolute;
+
+        color: #ffffff;
+    }
+
+        .secao-banner .banner-texto-texto h1 {
+            font-size: 40px;
+        }
+        .secao-banner .banner-texto-texto p {
+            font-size: 20px;
+        }
+
+/* Seção 3 - BEM-VINDO */
+
+.secao-bem-vindo {
+    padding: 50px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+    .secao-bem-vindo .bem-vindo-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .secao-bem-vindo .bem-vindo-texto h2 {
+            font-weight: normal;
+        }
+
+    .secao-bem-vindo .bem-vindo-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+        .secao-bem-vindo .bem-vindo-cards .quarto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0 20px 0;
+            gap: 20px;
+            
+            border-bottom: 2px solid #2596be;
+        }
+
+            .secao-bem-vindo .bem-vindo-cards .quarto img {
+                width: 300px;
+            }
+            .secao-bem-vindo .bem-vindo-cards .quarto a {
+                color: #333333;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+/* Seção 4 - ROTA */
+
+.secao-rota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+    .secao-rota .rota-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+        .secao-rota .rota-texto h2 {
+            font-weight: normal;
+        }
+
+    .secao-rota iframe {
+        width: 100%;
+        height: 50vh;
+    }
+
+/* Seção 5 - SOBRE */
+
+.secao-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+    .secao-sobre .sobre-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+        .secao-sobre .sobre-texto h2 {
+            font-weight: normal;
+        }
+    
+    .secao-sobre .sobre-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+        .secao-sobre .sobre-cards .card {
+            width: 450px;
+            height: 120px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+            .secao-sobre .sobre-cards .card h3,
+            .secao-sobre .sobre-cards .card p {
+                max-width: 330px;
+            }
+            .secao-sobre .sobre-cards .card img {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                right: 0;
+            }
+
+/* Seção 6 - CONTATO */
+
+.secao-contato {
+    background-color: #49997c;
+}
+    .secao-contato .limite-conteudo {
+        min-height: 100px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        padding: 10px 20px;
+
+        border-bottom: 1px solid #777777;
+    }
+
+    .secao-contato .limite-conteudo h2,
+    .secao-contato .limite-conteudo .card-contato {
+        flex-basis: 220px;
+        color: #ffffff;
+    }
+
+    .secao-contato .limite-conteudo h2 { font-size: 20px; }
+    
+    .secao-contato .limite-conteudo .card-contato {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .secao-contato .limite-conteudo .card-contato img {
+            width: 30px;
+            height: 30px;
+        }
+        .secao-contato .limite-conteudo .card-contato p {
+            width: 170px;
+        }
+
+/* Seção 7 - COPYRIGHT */
+
+.secao-copy {
+    background-color: #49997c;
+    height: 50px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .secao-copy small {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 13px;
+    }

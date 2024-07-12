@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'sans-serif';
+}
+
+.limite-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Seção 1 - TOP */
+.secao-topo {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+}
+    .secao-topo .limite-conteudo {
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .botao-home {
+            flex-grow: 1;
+            font-size: 21px;
+            text-decoration: none;
+            color: #000000;
+        }
+            .botao-home span{
+                color: #2596be;
+            }
+        .topo-links {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+            .topo-links a {
+                font-size: 16px;
+                text-decoration: none;
+                color: #222222;
+            }
+
+/* Seção 2 - MEIO-BANNER */
+.secao-meiobanner {
+    height: 100px;
+    margin-top: 50px;
+
+    background-image: url("../assets/img-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Seção 3 - QUARTOS */
+.secao-quartos {
+    padding: 50px 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+}
+
+    .quartos-solteiro,
+    .quartos-casal,
+    .quartos-familia {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 30px;
+    }
+        .quartos-solteiro h2,
+        .quartos-casal h2,
+        .quartos-familia h2 {
+            font-weight: normal;
+        }
+        .quartos-solteiro p,
+        .quartos-casal p,
+        .quartos-familia p {
+            font-size: 16px;
+        }
+        .cards-quartos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 10px;
+
+        }
+            .cards-quartos img {
+                width: 300px;
+                height: 190px;
+                border-radius: 5px;
+            }
+        .cards-infos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0 20px;
+            gap: 20px;
+        }
+            .infos {
+                width: 200px;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                
+            }
+
+/* Seção 4 - CONTATO */
+.secao-contato {
+    background-color: #49997c;
+}
+    .secao-contato .limite-conteudo {
+        min-height: 100px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        padding: 10px 20px;
+
+        border-bottom: 1px solid #777777;
+    }
+        .secao-contato .limite-conteudo h2,
+        .secao-contato .limite-conteudo .card-contato {
+            flex-basis: 220px;
+            color: #ffffff;
+        }
+        .secao-contato .limite-conteudo h2 { font-size: 20px; }
+        .secao-contato .limite-conteudo .card-contato {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .secao-contato .limite-conteudo .card-contato img {
+                width: 30px;
+                height: 30px;
+            }
+            .secao-contato .limite-conteudo .card-contato p { width: 170px; }
+
+/* Seção 5 - COPY */
+.secao-copy {
+    background-color: #49997c;
+    height: 50px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+    .secao-copy small {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 13px;
+    }
